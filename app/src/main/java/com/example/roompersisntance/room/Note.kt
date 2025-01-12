@@ -1,6 +1,7 @@
 package com.example.roompersisntance.room
 
 import android.icu.text.CaseMap.Title
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.net.IDN
@@ -11,5 +12,7 @@ data class Note(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     val title: String,
-    val timestamp: Timestamp
+    val content: String,
+    val timestamp: String
+
 )

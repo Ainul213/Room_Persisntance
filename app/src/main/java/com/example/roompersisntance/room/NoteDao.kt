@@ -7,7 +7,7 @@ import androidx.room.Query
 @Dao
 interface NoteDao {
     @Insert
-    suspend fun insert(note : note)
+    suspend fun insert(note : Note)
 
     @Query("SELECT * FROM notes")
     suspend fun getAllNotes(): List<Note>
